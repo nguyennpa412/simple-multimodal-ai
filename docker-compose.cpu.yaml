@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
+    image: nguyennpa412/simple-multimodal-ai:cpu
+    restart: always
+    ports:
+      - 7860:7860

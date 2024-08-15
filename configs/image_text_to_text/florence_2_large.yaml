@@ -1,0 +1,31 @@
+load_config:
+    task_name: "Image-Text-to-Text"
+    functions: "Description Generation, Computer Vision Tasks"
+    model_hf_path: "microsoft/Florence-2-large"
+    max_new_tokens: 1024
+    low_cpu_mem_usage: True
+    trust_remote_code: True
+    num_beams: 3
+    do_sample: False
+    early_stopping: False
+    skip_special_tokens: False
+    specs:
+        cpu:
+            use_gpu: False
+            load_in_4bit: False
+            load_in_8bit: False
+            model_dtype: "float32" # cpu works only with f32
+        gpu_low:
+            use_gpu: True
+            load_in_4bit: True
+            load_in_8bit: False
+            model_dtype: "bfloat16"
+        gpu_high:
+            use_gpu: True
+            load_in_4bit: False
+            load_in_8bit: False
+            model_dtype: "float32"
+
+warm_up_config:
+    text_input: "!describe -l"
+    image_path: "assets/images/demo_01.png"

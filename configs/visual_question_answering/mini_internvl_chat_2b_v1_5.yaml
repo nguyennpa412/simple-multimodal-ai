@@ -1,0 +1,28 @@
+load_config:
+    task_name: "Visual Question Answering"
+    functions: "Chatbot"
+    model_hf_path: "OpenGVLab/Mini-InternVL-Chat-2B-V1-5"
+    max_new_token: 1024
+    low_cpu_mem_usage: True
+    trust_remote_code: True
+    # num_beams: 1
+    do_sample: False
+    specs:
+        gpu_low:
+            max_num: 1
+            load_in_4bit: False
+            load_in_8bit: True
+            model_dtype: "bfloat16"
+            use_flash_attention: False
+            max_chat_history: 5
+        gpu_high:
+            max_num: 12
+            load_in_4bit: False
+            load_in_8bit: False
+            model_dtype: "float32"
+            use_flash_attention: True
+            max_chat_history: 20
+
+warm_up_config:
+    question: "Please describe the image in detail."
+    image_path: "assets/images/demo_01.png"

@@ -1,0 +1,111 @@
+.gradio-container {
+  align-items: center;
+}
+
+.gradio-container > .main {
+  width: 100%;
+}
+
+#visinp-input-image div.upload-container,
+#visinp-annotated-image div.image-container {
+  width: auto;
+}
+
+#visinp-input-image div.image-frame > img,
+#visinp-annotated-image div.image-container > img {
+  object-fit: contain;
+  max-height: 565px !important;
+}
+
+#visinp-description-speech-btn {
+  padding: 0;
+  background-color: transparent;
+}
+
+#visinp-description-speech-btn > img {
+  margin: 0;
+}
+
+#visinp-description-speech-audio > div.component-wrapper > div.timestamps,
+#visinp-description-speech-audio > div.component-wrapper > div.controls,
+#visinp-description-speech-audio > div.icon-buttons,
+#visinp-input-image span.source-selection {
+  display: none;
+}
+
+#visinp-demo-images label,
+#chatbot label {
+  font-size: 16px;
+}
+
+#chatbot-input button.upload-button,
+#visinp-input-image button[title="Remove Image"] {
+  visibility: hidden;
+}
+#chatbot-input textarea {
+  margin: 0 5px 0 -30px;
+}
+
+#visinp-demo-images > div.grid-wrap {
+  padding-top: 35px;
+}
+
+#visinp-description-speech-btn > img.button-icon {
+  width: 80%;
+  height: auto;
+}
+
+#visinp-speaker-dropdown > div.container > span {
+  position: absolute;
+  margin-top: 10px;
+}
+#visinp-speaker-dropdown > div.container > div.wrap {
+  margin-left: 45px;
+}
+
+#vistas-info blockquote {
+  margin-left: 3% !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.5% !important;
+}
+#vistas-info .no-margin {
+  margin: 0;
+}
+#vistas-info .margin-top-1-5 {
+  margin-top: -1.5%;
+}
+#vistas-tooltip {
+  text-align: end;
+}
+
+#tasmod-info .tasmod-info-tab > div.gap {
+  gap: normal;
+}
+
+#chatbot span.chatbot.prose {
+  font-size: initial;
+}
+
+#chatbot-annot-status-md-div > img,
+#chatbot-annot-status-md-div > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#chatbot-annot-status-md-div {
+  padding-right: 10px;
+  text-align: end;
+}
+
+#chatbot-annot-status {
+  margin-top: -8px;
+}
+
+button.chatbot-quick-command-btn-group {
+  min-width: 60px;
+  font-size: 0.7em;
+}
+
+#chatbot {
+  flex-grow: 0 !important;
+}

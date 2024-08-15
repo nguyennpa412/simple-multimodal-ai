@@ -1,0 +1,21 @@
+module_config:
+    ittt: "configs/image_text_to_text/florence_2_large.yaml"
+    vqa: "configs/visual_question_answering/mini_internvl_chat_2b_v1_5.yaml"
+    tts: "configs/text_to_speech/xtts_v2.yaml"
+
+app_config:
+    title: "Simple Multimodal AI"
+    demo_image_path: "assets/images/demo_01.png"
+    demo_images_folder_path: "assets/images"
+    default_bot_avatar_path: "assets/icons/default_bot.png"
+    vision_tasks_config_path: "configs/computer_vision_tasks_config.parquet"
+    # specs_type: cpu|gpu_low|gpu_high
+    specs_type: "gpu_low"
+    # theme, css
+    theme: "upsatwal/mlsc_tiet"
+    css_path: "configs/app.css"
+
+launch_config:
+    share: False
+    inbrowser: True
+    favicon_path: "assets/icons/default_bot.png"

@@ -1,0 +1,24 @@
+# FROM ubuntu:22.04
+FROM python:3.10
+
+ENV PYTHONUNBUFFERED=1
+WORKDIR /SMAI
+
+# VENV
+ENV VIRTUAL_ENV=/opt/venv
+RUN python3 -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+
+# INSTALL & COPY
+COPY requirements.cpu.txt .
+RUN python3 -m pip install --no-cache-dir --upgrade pip && \
+    python3 -m pip install --no-cache-dir wheel && \
+    python3 -m pip install --no-cache-dir -r /SMAI/requirements.cpu.txt && \
+    huggingface-cli download microsoft/Florence-2-large
+COPY . .
+
+# RUN
+EXPOSE 7860
+ENV GRADIO_SERVER_NAME="0.0.0.0"
+
+CMD ["python", "/SMAI/app.py"]

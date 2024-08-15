@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nguyennpa412/simple-multimodal-ai:gpu-low
+    # image: nguyennpa412/simple-multimodal-ai:gpu-high
+    restart: always
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    ports:
+      - 7860:7860
