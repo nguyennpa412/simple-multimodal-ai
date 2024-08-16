@@ -13,7 +13,7 @@
 
 A simple yet vesatile application using Gradio, featuring the integration of various open-source models from Hugging Face. This app supports a range of tasks, including Image Text to Text, Visual Question Answering, and Text to Speech, providing an accessible interface for experimenting with these advanced machine learning models.
 
-![cover](https://github.com/user-attachments/assets/17b245dd-29eb-4596-9c8b-012ace0bcd3b)
+![cover](https://github.com/user-attachments/assets/fbf58c51-da5d-47fb-b141-63db59f7c043)
 
 ## 2. Main features
 
@@ -113,22 +113,22 @@ A simple yet vesatile application using Gradio, featuring the integration of var
 >     - David Attenborough
 >     - Morgan Freeman
 > - **Random bot**: _With every input image entry, a different random bot avatar would be used._ 
->     - <details><summary>Demo</summary><video src="https://github.com/user-attachments/assets/4fcf8614-a942-4b90-92fe-b9c98ee0165d"></video></details>
+>     - <details><summary>Demo</summary><video src="https://github.com/user-attachments/assets/40bc1bfb-4b34-4b3e-ad42-30be830c9893"></video></details>
 
 ## 3. Demos
 <details>
     <summary><b>Image-Text-to-Text</b></summary>
-    <video src="https://github.com/user-attachments/assets/22d2950b-2466-4780-b96b-913f06b1a5d2"></video>
+    <video src="https://github.com/user-attachments/assets/cf9f00cf-3cd1-4396-ae06-b4c4e0dc3ac4"></video>
 </details>
 
 <details>
     <summary><b>Visual Question Answering</b></summary>
-    <video src="https://github.com/user-attachments/assets/7b9d05a0-df7a-408e-b509-483dd51c9565"></video>
+    <video src="https://github.com/user-attachments/assets/c37ec1a2-3260-4646-b521-0b78503609c3"></video>
 </details>
 
 <details>
     <summary><b>Text-to-Speech</b></summary>
-    <video src="https://github.com/user-attachments/assets/becea701-2328-47f8-8eed-c4ae4cacd1e6"></video>
+    <video src="https://github.com/user-attachments/assets/f02b0459-e83d-4a00-b765-65ec37ebd499"></video>
 </details>
 
 ## 4. Installation
@@ -153,7 +153,7 @@ A simple yet vesatile application using Gradio, featuring the integration of var
 
 - **GPU consumptions**:
 
-![GPU_consumptions](https://github.com/user-attachments/assets/e9b0c14b-e26d-4730-a7a3-7d67c79d8021)
+![GPU_consumptions](https://github.com/user-attachments/assets/4c68463e-c2c8-46c7-a286-8eaa767d805f)
 
 > - You can set `dtype` and `quantization` based on this table so that you can make full use of your GPU.
 > - For example with my **6GB GPU**:
